@@ -1,0 +1,32 @@
+<template name="Navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><i class="fa fa-medium"></i> FoodCourt</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navigationbar">
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            {{#if currentUser}}
+                            <p>{{currentUser.profile.name}}</p>
+                            <button clsas="btn-default btn" id="logout">Logout</button>
+                            {{else}}
+                            <button clsas="btn-default btn" id="login">Login</button>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</template>

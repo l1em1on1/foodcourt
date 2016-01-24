@@ -2,17 +2,6 @@
 /* Home: Event Handlers */
 /*****************************************************************************/
 Template.Home.events({
-    "click #login": function() {
-        Meteor.loginWithGoogle({}, function (err) {
-               if(err) {
-                   console.log(err);
-               }
-           }
-       );
-    },
-    "click #logout": function() {
-        Meteor.logout();
-    }
 });
 
 /*****************************************************************************/

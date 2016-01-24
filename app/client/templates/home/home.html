@@ -1,5 +1,14 @@
 <template name="Home">
   <div class="home container">
     <h1>Home</h1>
-  </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                {{#if currentUser}}
+                    <p>Hello {{currentUser.profile.name}}</p>
+                {{/if}}
+            </div>
+        </div>
+
+    </div>
 </template>
