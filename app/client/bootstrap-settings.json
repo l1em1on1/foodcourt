@@ -43,7 +43,8 @@
        "tooltip": true,
        "type": true,
        "utilities": true,
-       "wells": true
+       "wells": true,
+       "main": true
     }
   },
 
