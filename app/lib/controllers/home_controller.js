@@ -36,7 +36,10 @@ HomeController = RouteController.extend({
   onBeforeAction: function () {
     this.next();
   },
-  
+
+  dashboard: function() {
+
+  },
   // The same thing as providing a function as the second parameter. You can
   // also provide a string action name here which will be looked up on a Controller
   // when the route runs. More on Controllers later. Note, the action function

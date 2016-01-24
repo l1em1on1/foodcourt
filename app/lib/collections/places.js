@@ -17,6 +17,12 @@ Places.attachSchema(new SimpleSchema({
     comments:       { type: [Object] }
 }));
 
+Places.helpers({
+    comments: function() {
+        return Comments.findOne(this.placeId);
+    }
+});
+
 if (Meteor.isServer) {
   Places.allow({
     insert: function (userId, doc) {

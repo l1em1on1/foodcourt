@@ -31,7 +31,7 @@ Router.route('/groups/:group_slug/:place_slug', {
     where: 'client'
 });
 
-Router.route('/user/:user', {
+Router.route('/user', {
     name: 'dashboard',
     controller: 'HomeController',
     where: 'client'

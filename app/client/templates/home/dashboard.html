@@ -1,0 +1,17 @@
+<template name="Dashboard">
+	{{#if currentUser}}
+    <div class="user container">
+    	<p>{{ currentUser.profile.name }}</p>
+    	{{#if currentUser.groups}}
+        <ul>
+            {{#each group in currentUser.groups }}
+            <li>{{ group._id }}</li>
+            {{/each}}
+        </ul>
+        {{ else }}
+        <p>No groups</p>
+        {{/if}}
+
+    </div>
+    {{/if}}
+</template>
