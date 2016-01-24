@@ -1,5 +1,14 @@
 <template name="Home">
   <div class="home">
     <h1>Find me in app/client/templates/home/home</h1>
+
+    {{#if currentUser}}
+        <p>{{currentUser.profile.name}}</p>
+        <button id="logout">Logout</button>
+    {{else}}
+        <button id="login">Login</button>
+    {{/if}}
+
+
   </div>
 </template>
