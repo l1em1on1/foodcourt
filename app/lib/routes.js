@@ -14,18 +14,20 @@ Router.route('/', {
 Router.route('/groups', {
     name: 'groups',
     controller: 'GroupController',
-    where: 'client'
+    where: 'client',
+    actionDetails: 'groupList'
 });
 
 Router.route('/groups/:group_slug', {
     name: 'group',
     controller: 'GroupController',
-    where: 'client'
+    where: 'client',
+    actionDetails: 'group'
 });
 
 Router.route('/groups/:group_slug/:place_slug', {
     name: 'place',
-    controller: 'GroupController',
+    controller: 'PlaceController',
     where: 'client'
 });
 
